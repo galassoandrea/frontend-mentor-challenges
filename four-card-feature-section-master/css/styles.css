@@ -66,9 +66,19 @@ body {
   margin-bottom: 35px;
 }
 
+/* Credits */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 /* Media Queries */
 
-/* Meidum Screens */
+/* Medium Screens */
 @media (max-width: 992px) {
   .heading-paragraph {
     width: 80%;
@@ -76,12 +86,20 @@ body {
 }
 
 /* Small Screens */
-@media (max-width: 500px) {
-  .card {
-    width: 400px;
-    margin: auto;
+@media (max-width: 576px) {
+  .container {
+    padding: 4% 4%;
   }
-  .team-builder {
-    margin-bottom: 30px;
+
+  .top-heading {
+    font-size: 1.5rem;
+  }
+
+  .bottom-heading {
+    font-size: 1.4rem;
+  }
+
+  .heading-paragraph {
+    width: auto;
   }
 }
