@@ -1,0 +1,133 @@
+/* Hello Guys, in this exercise I had some problems with the border-radius property,
+so, I have adopted for a solution that is not the best.
+If you have a better solution or idea about this exercise, please let me know! */
+
+/* Tags Section */
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla';
+  font-size: 1rem;
+  margin: 3.5rem 0.7rem 2.5rem;
+}
+
+/* Headings */
+.top-heading {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.sub-heading {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1.25rem;
+}
+
+.center-heading , .bottom-heading {
+  color: #fff;
+  margin-bottom: 1.25rem;
+}
+
+/* Paragraphs */
+.top-section-paragraph {
+  color: hsl(218, 22%, 67%);
+  line-height: 2;
+}
+
+.center-section-paragraph , .price-paragraph {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 0;
+}
+
+.bottom-section-paragraph {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 0;
+}
+
+.price {
+  font-size: 2.5rem;
+  color: #fff;
+  padding-right: 0.625rem;
+}
+
+/*Box Section */
+.top-row {
+  border-top: solid 15px #fff;
+  border-radius: 15px 15px 0 0;
+}
+
+.bottom-row {
+  border-radius: 0 0 15px 15px;
+}
+
+.box {
+  padding: 5% 5%;
+}
+
+.top-section {
+  background-color: #fff;
+}
+
+.center-section {
+  border-radius: 0 0 0 15px;
+  background-color: hsl(179, 60%, 43%);
+}
+
+.bottom-section {
+  border-radius: 0 0 15px 0;
+  background-color: hsl(179, 72%, 43%);
+}
+
+/* Buttons */
+.register-button {
+	box-shadow: 0px 7px 14px -7px hsl(179, 60%, 43%);
+	background-color:#bee067;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding: 10px 112px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+  margin: 20px 0 10px;
+}
+.register-button:hover {
+	background-color:#77a809;
+  color: #ffffff;
+  text-decoration: none;
+}
+.register-button:active {
+	position:relative;
+	top:1px;
+}
+
+/* Credits */
+  .attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+/* Media Queries */
+@media (min-width: 992px) { /* Medium Screens */
+  .row {
+    width: 45rem;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) { /* Small Screens */
+  .center-section {
+    border-radius: 0
+  }
+
+  .bottom-section {
+    border-radius: 0 0 15px 15px;
+  }
+}
